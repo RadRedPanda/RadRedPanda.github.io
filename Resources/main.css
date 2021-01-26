@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400,600,700");
 
 html {
-	background-image: url("Resources/Images/background.jpg") no-repeat center center fixed;
+	background-image: url("Images/background.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
