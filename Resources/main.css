@@ -107,27 +107,26 @@ p {
 	font: 15px/2 Montserrat, Georgia, Serif;
 	margin: 0 0 30px 0;
 	text-indent: 40px;
-	colr: white;
+	color: white;
 }
 
 .button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-
-  background-color: rgba(0, 0, 0, 0); 
-  color: white; 
-  border: 2px solid #17435E;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 20px Montserrat;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0); 
+	color: white; 
+	border: 2px solid #17435E;
 }
 
 .button:hover {
-  background-color: #17435E;
-  color: white;
+	background-color: #17435E;
+	color: white;
 }
