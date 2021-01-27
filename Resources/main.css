@@ -8,9 +8,12 @@ html {
 }
 
 .nav {
-  background-color: rgba(23, 67, 94, 0.8);
-  overflow: hidden;
-  margin: 0;
+	background-color: rgba(23, 67, 94, 0.8);
+	overflow: hidden;
+	margin: 0;
+	-moz-box-shadow: 0 0 20px black;
+	-webkit-box-shadow: 0 0 20px black;
+	box-shadow: 0 0 20px black;
 }
 
 .nav a {
@@ -49,7 +52,7 @@ html {
 }
 
 .container {
-  padding: 5px;
+	padding: 5px;
 }
 
 div.scrollmenu {
