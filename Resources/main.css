@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400,600,700");
 html { 
-	background: url("Images/background.jpg") no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url(Images/backgroundImage2.png) fixed; 
+}
+
+:root {
+	--background-color: rgba(252, 207, 139, 1);
+	--text-color: rgba(8, 8, 8, 1);
+	--text-back-color-a: rgba(212, 98, 52, 0.8);
+	--text-back-color: rgba(212, 98, 52, 1);
 }
 
 .nav {
-	background-color: rgba(23, 67, 94, 0.8);
+	background-color: var(--text-back-color-a);
 	overflow: hidden;
 	margin: 0;
 	-moz-box-shadow: 0 0 20px black;
@@ -18,7 +21,7 @@ html {
 
 .nav a {
 	float: left;
-	color: #f2f2f2;
+	color: var(--text-color);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -26,13 +29,13 @@ html {
 }
 
 .nav a:hover {
-	background-color: rgba(23, 67, 94, 1);
+	background-color: var(--text-back-color);
 	transition-duration: 0.4s;
 }
 
 .nav a.active {
-	background-color: rgba(23, 67, 94, 1);
-	color: white;
+	background-color: var(--text-back-color);
+	color: var(--text-color);
 }
 
 #main-image {
@@ -44,11 +47,11 @@ html {
 	width: 60%;
 	margin: 50px auto;
 	padding: 20px;
-	background: rgba(23, 67, 94, 0.8); 
+	background: var(--text-back-color-a); 
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
 	box-shadow: 0 0 20px black;
-	color: white;
+	color: var(--text-color);
 }
 
 .container {
@@ -58,8 +61,8 @@ html {
 div.scrollmenu {
 	white-space: nowrap;
     overflow:auto;
-	background-color: #07334E;
-	border: 1px solid white;
+	background-color: var(--text-back-color);
+	border: 1px solid var(--text-color);
 }
 
 div.video {
@@ -70,7 +73,7 @@ div.video {
 div.gallery {
 	display: inline-block;
 	margin: 5px;
-	border: 1px solid #ccc;
+	border: 1px solid var(--text-color);
 	width: 180px;
 }
 
@@ -87,19 +90,19 @@ div.desc {
 	padding: 15px;
 	text-align: center;
 	font: 15px Montserrat
-	color: white;
+	color: var(--text-color);
 }
 
 h1 {
 	font: 50px Montserrat;
 	font-weight: bold;
-	color: white;
-	text-shadow: -2px -2px 0 #17435E, 2px -2px 0 #17435E, -2px 2px 0 #17435E, 2px 2px 0 #17435E;
+	color: var(--text-color);
+	text-shadow: -2px -2px 0 var(--text-back-color), 2px -2px 0 var(--text-back-color), -2px 2px 0 var(--text-back-color), 2px 2px 0 var(--text-back-color);
 }
 
 h2 {
 	font: 20px Montserrat;
-	color: white;
+	color: var(--text-color);
 }
 
 input {
@@ -110,7 +113,7 @@ p {
 	font: 15px/2 Montserrat, Georgia, Serif;
 	margin: 0 0 30px 0;
 	text-indent: 40px;
-	color: white;
+	color: var(--text-color);
 }
 
 .button {
@@ -126,10 +129,10 @@ p {
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0); 
 	color: white; 
-	border: 2px solid #17435E;
+	border: 2px solid var(--text-back-color);
 }
 
 .button:hover {
-	background-color: #17435E;
+	background-color: var(--text-back-color);
 	color: white;
 }
